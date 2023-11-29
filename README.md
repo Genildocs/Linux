@@ -8,7 +8,8 @@ Comandos úteis para quem estar iniciando com o linux. Esses comandos são para 
 
 ## Documentação
 
-
+- Processos
+- Firewall
 
 
 
