@@ -1,30 +1,32 @@
 
 # Comandos úteis para linux
 
-Comandos úteis para quem estar iniciando com o linux. Esses comandos são para distribuições baseadas no ubuntu, uitlize-os no seu shell de preferencia.
+Comandos úteis para quem está iniciando com o Linux. Esses comandos são para distribuições baseadas no Ubuntu; utilize-os no seu shell de preferência.
 
 
 
 
 ## Documentação
-
 - Processos
 - Firewall
+- User root no terminal
+- Dicas
+- Erros
 
 
 
 
-### Processos:
+## Processos:
 
 #### 1. Usando o PID (Process ID):
 
-- Descubra o PID do processo que você deseja encerrar usando o comando ps. Por exemplo, para encontrar o PID de um processo chamado nome_do_processo:
+- Descubra o PID do processo que você deseja encerrar usando o comando ps. Por exemplo, para encontrar o PID de um processo chamado `nome_do_processo`:
 
 ```bash
 ps aux | grep nome_do_processo
 
 ```
-- Use o comando kill com o PID para encerrar o processo:
+- Use o comando `kill` com o PID para encerrar o processo:
 
 ```bash
 kill PID
@@ -33,7 +35,7 @@ kill PID
 
 #### 2. Usando pkill (por nome do processo):
 
-- Você pode encerrar um processo diretamente pelo nome usando o pkill. Por exemplo, para encerrar um processo chamado nome_do_processo:
+- Você pode encerrar um processo diretamente pelo nome usando o pkill. Por exemplo, para encerrar um processo chamado `nome_do_processo`:
 
 ```bash
 pkill nome_do_processo
@@ -104,8 +106,8 @@ top
 ex: top help
 ```
 
-### Firewall:
-- Aqui algumas ferramentas para monitoramento de conexões em tempo real.
+## Firewall:
+- Aqui estão algumas ferramentas para monitoramento de conexões em tempo real.
 
 #### 1. tcpdump:
 - O `tcpdump` é uma ferramenta poderosa para capturar e exibir pacotes em uma rede. Você pode usá-lo para monitorar as conexões em tempo real.
@@ -123,4 +125,59 @@ sudo iftop
 ```
 - O `iftop` também mostra informações sobre as conexões ativas.
 
+## User root no terminal
+- A maneira comum de usar o usuário root no terminal é através do comando su (substitute user). Aqui estão os passos básicos:
 
+#### 1. Abra o terminal:
+- No Linux, geralmente você pode pressionar `Ctrl + Alt + T` para abrir um terminal.
+- Digite o comando `su` seguido de Enter.
+- Para sair do usuário root e voltar ao seu usuário normal, basta digitar o comando `exit` e pressionar Enter.
+- Ao usar o usuário `root`, tenha cautela com os comandos que você executa. Comandos incorretos podem causar danos ao sistema.
+
+
+## Dicas:
+- Aqui irei postar dicas que me ajudaram. Portanto, esta parte será continuamente atualizada.
+
+#### - Alterar permissao de um dispositivo
+- Para permitir que todos os usuários editem um dispositivo no Linux, você precisa ajustar as permissões desse dispositivo. Use o comando `chmod` para alterar as permissões do dispositivo. Aqui está um exemplo genérico de como você pode fazer isso:
+
+##### 1-Identificar o dispositivo:
+- Primeiro, descubra o caminho do dispositivo que você deseja editar. Isso pode ser, por exemplo, um dispositivo de bloco (como um disco rígido) ou um dispositivo de caractere (como uma impressora).
+
+##### 2-Alterar as permissões:
+- Use o comando `chmod` para alterar as permissões do dispositivo. O formato básico é:
+```
+sudo chmod permissões /caminho/do/dispositivo
+
+```
+- Substitua `permissões` pelos valores numéricos apropriados e `/caminho/do/dispositivo` pelo caminho real do dispositivo.
+
+- Para permitir que todos os usuários leiam, escrevam e executem (para dispositivos de bloco, como discos rígidos):
+```
+sudo chmod a+rwx /caminho/do/dispositivo
+```
+- Para permitir que todos os usuários leiam, escrevam e executem (para dispositivos de caractere, como impressoras):
+```
+sudo chmod a+rw /caminho/do/dispositivo
+```
+- *** Se você precisar de permissões mais granulares, pode ser útil aprender sobre o uso do comando `chown` para alterar o proprietário do arquivo ou dispositivo.***
+## Erros:
+- Aqui, irei postar alguns erros que tive com o Linux e como consegui resolvê-los. Portanto, esta parte será continuamente atualizada.
+
+#### - Erro de montagem de devices:
+```
+Unknown erro when mounting /dev/sdb3
+```
+- Tive esse erro ao tentar montar devices com arquivos ntfs. Resolvido verificando a integridade do sistema de arquivos NTFS do dispositivo. Para isso use o comando:
+```
+sudo ntfsfix <device>
+
+Isso tentará corrigir possíveis problemas no sistema de arquivos NTFS.
+```
+- Certifique-se de ter o driver ntfs instalado. No Linux, você pode usar o `ntfs-3g` para montar partições NTFS. Se não estiver instalado, você pode instalá-lo usando o gerenciador de pacotes da sua distribuição. Por exemplo, no Ubuntu, você pode usar o seguinte comando:
+
+```
+sudo apt-get install ntfs-3g
+```
+
+ 
