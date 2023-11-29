@@ -107,6 +107,8 @@ ex: top help
 ```
 
 ## Firewall:
+- [tcpdump](#tcpdump)
+- [iftop](#iftop)
 - Aqui estão algumas ferramentas para monitoramento de conexões em tempo real.
 
 #### 1. tcpdump:
