@@ -8,10 +8,10 @@ Comandos úteis para quem está iniciando com o Linux. Esses comandos são para 
 
 ## Documentação
 - [Processos](#processos)
-- Firewall
-- User root no terminal
-- Dicas
-- Erros
+- [Firewall](#firewall)
+- [User root no terminal](#user-root-no-terminal)
+- [Dicas](#dicas)
+- [Erros](#erros)
 
 
 
