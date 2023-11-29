@@ -2,6 +2,7 @@
 # Comandos úteis para linux
 
 Comandos úteis para quem está iniciando com o Linux. Esses comandos são para distribuições baseadas no Ubuntu; utilize-os no seu shell de preferência.
+Esse conteúdo será continuamente atualizado.
 
 
 
@@ -17,6 +18,15 @@ Comandos úteis para quem está iniciando com o Linux. Esses comandos são para 
 
 
 ## Processos:
+- [Usando o PID (Process ID)](#usando-o-pid-process-id)
+- [Usando pkill (por nome do processo)](#usando-pkill-por-nome-do-processo)
+- [Usando killall (por nome do comando)](#usando-killall-por-nome-do-comando)
+- [Encerramento forçado](#encerramento-forcado)
+- [Listar todos os processos](#listar-todos-os-processos)
+- [Listar processos de um usuário específico](#listar-processos-de-um-usuario-especifico)
+- [Listar processos de forma arborescente](#listar-processos-de-forma-arborescente)
+- [Listar processos com um formato personalizado](#listar-processos-com-um-formato-personalizado)
+- [Listar os processos em tempo real (atualizando a cada segundo)](#listar-os-processos-em-tempo-real-atualizando-a-cada-segundo)
 
 #### 1. Usando o PID (Process ID):
 
@@ -107,7 +117,8 @@ ex: top help
 ```
 
 ## Firewall:
-- Aqui estão algumas ferramentas para monitoramento de conexões em tempo real.
+- [tcpdump](#tcpdump)
+- [iftop](#iftop)
 
 #### 1. tcpdump:
 - O `tcpdump` é uma ferramenta poderosa para capturar e exibir pacotes em uma rede. Você pode usá-lo para monitorar as conexões em tempo real.
@@ -136,7 +147,7 @@ sudo iftop
 
 
 ## Dicas:
-- Aqui irei postar dicas que me ajudaram. Portanto, esta parte será continuamente atualizada.
+- [Alterar permissao de um dispositivo](#alterar-permissao-de-um-dispositivo)
 
 #### - Alterar permissao de um dispositivo
 - Para permitir que todos os usuários editem um dispositivo no Linux, você precisa ajustar as permissões desse dispositivo. Use o comando `chmod` para alterar as permissões do dispositivo. Aqui está um exemplo genérico de como você pode fazer isso:
@@ -162,8 +173,7 @@ sudo chmod a+rw /caminho/do/dispositivo
 ```
 - *** Se você precisar de permissões mais granulares, pode ser útil aprender sobre o uso do comando `chown` para alterar o proprietário do arquivo ou dispositivo.***
 ## Erros:
-- Aqui, irei postar alguns erros que tive com o Linux e como consegui resolvê-los. Portanto, esta parte será continuamente atualizada.
-
+- [Erro de montagem de devices](#erro-de-montagem-de-devices)
 #### - Erro de montagem de devices:
 ```
 Unknown erro when mounting /dev/sdb3
