@@ -2,7 +2,7 @@
 # Comandos úteis para linux
 
 Comandos úteis para quem está iniciando com o Linux. Esses comandos são para distribuições baseadas no Ubuntu; utilize-os no seu shell de preferência.
-Esse conteúdo será continuamente atualizado.
+Esse conteudo será continuamente atualizado.
 
 
 
