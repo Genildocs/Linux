@@ -28,7 +28,7 @@ Esse conteudo será continuamente atualizado.
 - [Listar processos com um formato personalizado](#listar-processos-com-um-formato-personalizado)
 - [Listar os processos em tempo real (atualizando a cada segundo)](#listar-os-processos-em-tempo-real-atualizando-a-cada-segundo)
 
-#### 1. Usando o PID (Process ID):
+#### Usando o PID (Process ID):
 
 - Descubra o PID do processo que você deseja encerrar usando o comando ps. Por exemplo, para encontrar o PID de um processo chamado `nome_do_processo`:
 
@@ -43,7 +43,7 @@ kill PID
 
 ```
 
-#### 2. Usando pkill (por nome do processo):
+#### Usando pkill (por nome do processo):
 
 - Você pode encerrar um processo diretamente pelo nome usando o pkill. Por exemplo, para encerrar um processo chamado `nome_do_processo`:
 
@@ -52,7 +52,7 @@ pkill nome_do_processo
 
 ```
 
-#### 3. Usando killall (por nome do comando):
+#### Usando killall (por nome do comando):
 
 - Para encerrar todos os processos com um determinado nome de comando:
 
@@ -62,7 +62,7 @@ killall nome_do_comando
 ```
 - Substitua nome_do_comando pelo nome do comando associado aos processos que você deseja encerrar.
 
-#### 4. Encerramento forçado:
+#### Encerramento forçado:
 
 - Se o processo não responder ao kill normal, você pode usar o sinal -9 para forçar o encerramento:
 
@@ -76,7 +76,7 @@ pkill -9 nome_do_processo
 ```
 - Tenha cuidado ao usar o sinal -9, pois ele não dá ao processo a oportunidade de realizar qualquer limpeza ou desalocação de recursos.
  
-#### 5. Listar todos os processos:
+#### Listar todos os processos:
 
 ```
 ps aux
@@ -84,26 +84,26 @@ ps aux
 ```
 - Este comando mostra uma lista detalhada de todos os processos em execução no sistema.
 
-#### 6. Listar processos de um usuário específico:
+#### Listar processos de um usuário específico:
 ```
 ps -u nome_do_usuario
 ```
 - Substitua "nome_do_usuario" pelo nome do usuário cujos processos você deseja visualizar.
 
-#### 7. Listar processos de forma arborescente:
+#### Listar processos de forma arborescente:
 ```
 pstree
 ```
 - Este comando exibe uma representação hierárquica dos processos em execução.
 
-#### 8. Listar processos com um formato personalizado:
+#### Listar processos com um formato personalizado:
 
 ```
 ps -eo pid,ppid,cmd
 ```
 - Este exemplo exibe o ID do processo (`pid`), o ID do processo pai (`ppid`), e o comando (`cmd`) que está sendo executado.
 
-#### 9. Listar os processos em tempo real (atualizando a cada segundo):
+#### Listar os processos em tempo real (atualizando a cada segundo):
 
 ```
 top
@@ -120,7 +120,7 @@ ex: top help
 - [tcpdump](#tcpdump)
 - [iftop](#iftop)
 
-#### 1. tcpdump:
+#### tcpdump:
 - O `tcpdump` é uma ferramenta poderosa para capturar e exibir pacotes em uma rede. Você pode usá-lo para monitorar as conexões em tempo real.
 
 ```
@@ -128,7 +128,7 @@ sudo tcpdump -i <interface_de_rede>
 ```
 - Substitua `<interface_de_rede>` pela sua interface de rede, por exemplo, `eth0`.
 
-#### 2. iftop:
+#### iftop:
 - O `iftop` é uma ferramenta que exibe informações em tempo real sobre o uso da largura de banda em uma interface de rede.
 
 ```
