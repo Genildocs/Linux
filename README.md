@@ -149,6 +149,12 @@ sudo iftop
 ## Dicas:
 - [Alterar permissao de um dispositivo](#alterar-permissao-de-um-dispositivo)
 
+#### - Abrir pasta pelo terminal
+- Comando:
+  ```
+  xdg-open <folder>
+  ```
+
 #### - Alterar permissao de um dispositivo
 - Para permitir que todos os usuários editem um dispositivo no Linux, você precisa ajustar as permissões desse dispositivo. Use o comando `chmod` para alterar as permissões do dispositivo. Aqui está um exemplo genérico de como você pode fazer isso:
 
