@@ -148,6 +148,7 @@ sudo iftop
 
 ## Dicas:
 - [Alterar permissao de um dispositivo](#alterar-permissao-de-um-dispositivo)
+- [Abrir pasta pelo terminal](#abrir-pasta-pelo-terminal)
 
 #### - Abrir pasta pelo terminal
 - Comando:
