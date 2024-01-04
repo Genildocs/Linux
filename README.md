@@ -196,5 +196,14 @@ Isso tentará corrigir possíveis problemas no sistema de arquivos NTFS.
 ```
 sudo apt-get install ntfs-3g
 ```
+- [Travamento do plasmashell](#travamento-do-plasmashell)
+#### Travamento do plasmashell
+```
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/KickoffListView.qml:68:18: QML ListView: possible QQuickItem::polish() loop
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/KickoffListView.qml:68:18: QML ListView: ListView called polish() inside updatePolish() of ListView
+```
+Use o comando: ```kquitapp5 plasmashell ``` para encerrar o processo.
+Use o comando: ``` kstart5 plasmashell ```para reiniciar o processo.
 
+Isso deve resolver o problema de loop nesses arquivos.
  
